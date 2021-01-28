@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public CharacterController controller;
-    public float speed = 10f;
+    public float speed = 20f;
     Vector3 velocity;
     public float gravity = -10f;
 
