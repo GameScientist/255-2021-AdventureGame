@@ -712,7 +712,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &157629545
 RectTransform:
   m_ObjectHideFlags: 0
@@ -727,11 +727,11 @@ RectTransform:
   - {fileID: 103822554}
   - {fileID: 1263544685}
   m_Father: {fileID: 817239690}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -432, y: 0}
+  m_AnchoredPosition: {x: -373.82825, y: 0}
   m_SizeDelta: {x: 136.6875, y: 182.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &157629546
@@ -777,7 +777,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 157629547}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1804591270}
+        m_TargetAssemblyTypeName: ItemSwitching, Assembly-CSharp
+        m_MethodName: EquipItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &157629547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,7 +1111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &293761431
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1114,7 +1126,7 @@ RectTransform:
   - {fileID: 496267109}
   - {fileID: 1565995626}
   m_Father: {fileID: 817239690}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1164,7 +1176,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 293761433}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1804591270}
+        m_TargetAssemblyTypeName: ItemSwitching, Assembly-CSharp
+        m_MethodName: EquipItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &293761433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1221,7 +1245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &315292219
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1236,11 +1260,11 @@ RectTransform:
   - {fileID: 1183702974}
   - {fileID: 1416617344}
   m_Father: {fileID: 817239690}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 432, y: 202.5}
+  m_AnchoredPosition: {x: 373.828, y: 202.5}
   m_SizeDelta: {x: 136.6875, y: 182.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &315292220
@@ -1286,7 +1310,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 315292221}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1804591270}
+        m_TargetAssemblyTypeName: ItemSwitching, Assembly-CSharp
+        m_MethodName: EquipItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &315292221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1718,7 +1754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &711189403
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1733,11 +1769,11 @@ RectTransform:
   - {fileID: 866429365}
   - {fileID: 667482527}
   m_Father: {fileID: 817239690}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -432, y: -202.5}
+  m_AnchoredPosition: {x: -373.82825, y: -202.5}
   m_SizeDelta: {x: 136.6875, y: 182.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &711189404
@@ -1783,7 +1819,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 711189405}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1804591270}
+        m_TargetAssemblyTypeName: ItemSwitching, Assembly-CSharp
+        m_MethodName: EquipItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &711189405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2184,7 +2232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &817239690
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2196,6 +2244,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2059328069}
   - {fileID: 1711197681}
   - {fileID: 1319209526}
   - {fileID: 711189403}
@@ -2205,14 +2254,13 @@ RectTransform:
   - {fileID: 315292219}
   - {fileID: 1876619738}
   - {fileID: 2091922890}
-  - {fileID: 2059328069}
   m_Father: {fileID: 1953365530}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 81}
-  m_SizeDelta: {x: -192, y: -270}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 116.34375, y: 81}
+  m_SizeDelta: {x: 1495.3125, y: 810}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &817239691
 MonoBehaviour:
@@ -3168,7 +3216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1319209526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3183,7 +3231,7 @@ RectTransform:
   - {fileID: 15334878}
   - {fileID: 42941013}
   m_Father: {fileID: 817239690}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -3233,7 +3281,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1319209528}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1804591270}
+        m_TargetAssemblyTypeName: ItemSwitching, Assembly-CSharp
+        m_MethodName: EquipItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1319209528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3426,7 +3486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1421964432
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3441,11 +3501,11 @@ RectTransform:
   - {fileID: 1729815471}
   - {fileID: 115229417}
   m_Father: {fileID: 817239690}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 432, y: 0}
+  m_AnchoredPosition: {x: 373.828, y: 0}
   m_SizeDelta: {x: 136.6875, y: 182.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421964433
@@ -3491,7 +3551,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1421964434}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1804591270}
+        m_TargetAssemblyTypeName: ItemSwitching, Assembly-CSharp
+        m_MethodName: EquipItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1421964434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4581,11 +4653,11 @@ RectTransform:
   - {fileID: 213362492}
   - {fileID: 1278596970}
   m_Father: {fileID: 817239690}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 432, y: -202.5}
+  m_AnchoredPosition: {x: 373.828, y: -202.5}
   m_SizeDelta: {x: 136.6875, y: 182.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1711197682
@@ -4631,7 +4703,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1711197683}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1804591270}
+        m_TargetAssemblyTypeName: ItemSwitching, Assembly-CSharp
+        m_MethodName: EquipItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1711197683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5015,6 +5099,7 @@ GameObject:
   - component: {fileID: 1804591267}
   - component: {fileID: 1804591269}
   - component: {fileID: 1804591268}
+  - component: {fileID: 1804591270}
   m_Layer: 5
   m_Name: EquippedItemBackground
   m_TagString: Untagged
@@ -5081,6 +5166,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804591266}
   m_CullTransparentMesh: 1
+--- !u!114 &1804591270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804591266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3251b6648a4609f4f814bcbae16362be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 1523972120}
 --- !u!1 &1876619737
 GameObject:
   m_ObjectHideFlags: 0
@@ -5099,7 +5197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1876619738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5114,7 +5212,7 @@ RectTransform:
   - {fileID: 94819813}
   - {fileID: 1525013736}
   m_Father: {fileID: 817239690}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -5164,7 +5262,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1876619740}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1804591270}
+        m_TargetAssemblyTypeName: ItemSwitching, Assembly-CSharp
+        m_MethodName: EquipItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1876619740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5714,7 +5824,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 817239690}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5783,7 +5893,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2091922890
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5798,11 +5908,11 @@ RectTransform:
   - {fileID: 417771946}
   - {fileID: 1534637797}
   m_Father: {fileID: 817239690}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -432, y: 202.5}
+  m_AnchoredPosition: {x: -373.82825, y: 202.5}
   m_SizeDelta: {x: 136.6875, y: 182.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2091922891
@@ -5848,7 +5958,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2091922892}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1804591270}
+        m_TargetAssemblyTypeName: ItemSwitching, Assembly-CSharp
+        m_MethodName: EquipItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2091922892
 MonoBehaviour:
   m_ObjectHideFlags: 0
