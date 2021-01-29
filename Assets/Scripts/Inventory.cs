@@ -11,11 +11,19 @@ public class Inventory : MonoBehaviour
         get { return _main; }
     }
 
+    public bool hasGum = false;
+    public bool hasToenail = false;
+    public bool hasShoelace = false;
     public bool hasRemote = false;
+    public bool hasRubberGloves = false;
     public bool hasBattery1 = false;
     public bool hasBattery2 = false;
     public bool hasBattery3 = false;
     public int batteries = 0;
+
+    private bool inventoryOpened = false;
+
+    public Transform panel;
 
     // Start is called before the first frame update
     private void Start()
@@ -48,6 +56,23 @@ public class Inventory : MonoBehaviour
         if (batteries == 1)
         {
             hasBattery1 = true;
+        }
+
+        if (Input.GetButtonDown("Fire2"))
+        {
+            if (!inventoryOpened)
+            {
+                panel.gameObject.SetActive(true);
+                inventoryOpened = true;
+                Cursor.lockState = CursorLockMode.Confined;
+            }
+
+            else
+            {
+                panel.gameObject.SetActive(false);
+                inventoryOpened = false;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
         }
     }
 
