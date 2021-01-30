@@ -4,12 +4,31 @@ using UnityEngine;
 
 public class Battery : MonoBehaviour
 {
-     public void PlayerInteract()
-    {
-        // remember that the player has "picked up" the object
-        Inventory.main.batteries += 1;
+    public Transform battery;
+    public Timer timer;
+    private bool hasBattery;
 
-        // destroy this game object:
-        Destroy(gameObject);
+    public void PlayerInteract()
+    {
+        if (hasBattery)
+        {
+            // remember that the player has "picked up" the object
+            Inventory.main.batteries += 1;
+            timer.TimeTrial();
+            // destroy this game object:
+            battery.gameObject.SetActive(false);
+            hasBattery = false;
+        }
+
+        else
+        {
+
+        }
+    }
+
+    public void Respawn()
+    {
+        battery.gameObject.SetActive(true);
+        hasBattery = true;
     }
 }

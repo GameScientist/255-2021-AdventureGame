@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 [RequireComponent(typeof(Camera))] // tells Unity, this script NEEDS to work.
 public class Raycaster : MonoBehaviour
 {
@@ -19,6 +20,11 @@ public class Raycaster : MonoBehaviour
 
         if (cam != null && Input.GetButtonDown("Fire1"))
         { // Did the user click on this game tick?
+            if (ItemSwitching.main.equipped == 4 && Inventory.main.batteries == 3)
+            {
+                SceneManager.LoadScene("Credits");
+            }
+
             Ray ray = new Ray(cam.transform.position, cam.transform.forward);
             RaycastHit hit;
 
@@ -27,14 +33,6 @@ public class Raycaster : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit)) // raycast hit a collider in the scene!
             {
-                //DoorController door = hit.transform.GetComponentInParent<DoorController>();
-                //if (door != null)
-                //{
-                //door.PlayerInteract(transform.parent.position);
-                //}
-
-                //ItemPickup pickup = hit.transform.GetComponent<ItemPickup>();
-                //if (pickup != null) pickup.PlayerInteract();
 
                 Battery battery = hit.transform.GetComponentInParent<Battery>();
                 if (battery != null)

@@ -5,11 +5,27 @@ using UnityEngine.UI;
 
 public class ItemSwitching : MonoBehaviour
 {
+    public static ItemSwitching _main;
+
+    public static ItemSwitching main
+    {
+        get { return _main; }
+    }
+
     public Text item;
     public int equipped;
 
     private void Start()
     {
+        if (_main == null)
+        {
+            _main = this;
+            // don't destroy this object when loading new scenes
+        }
+        else
+        {
+            Destroy(gameObject); // destroy this extra inventory system...
+        }
         EquipItem(0);
     }
 
