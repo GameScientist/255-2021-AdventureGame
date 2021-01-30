@@ -26,7 +26,7 @@ public class Narration : MonoBehaviour
         {
             // Inventory Items
             case "none":
-                description.text = "Allows me to take a closer look at whatever got trapped inside my couch, although I was quite content with not knowing!";
+                description.text = "Walk around with my hands empty. Not good for anything other than punching the enemies that this game does not have.";
                 break;
             case "gumInv":
                 description.text = "A piece of gum I chewed on for a few years until my wife said I should be smoking cigarettes instead. It is REALLY sticky, but I am greasy enough that it doesn't stick onto me.";
