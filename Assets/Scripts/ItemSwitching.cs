@@ -50,7 +50,7 @@ public class ItemSwitching : MonoBehaviour
                 item.text = "Remote";
                 break;
             case 5:
-                item.text = "Rubber Gloves";
+                item.text = "Gloves";
                 break;
             case 6:
                 item.text = "Battery";

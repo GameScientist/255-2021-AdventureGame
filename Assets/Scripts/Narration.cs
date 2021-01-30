@@ -77,7 +77,7 @@ public class Narration : MonoBehaviour
                 break;
 
             case "batteryPickUp3":
-                description.text = "That's the last one! Now I can turn the TV on!";
+                description.text = "That's the last one! Now I can turn the TV on with the remote!";
                 reactionTime = 0;
                 reacting = true;
                 break;
@@ -89,11 +89,46 @@ public class Narration : MonoBehaviour
                 break;
 
             case "dustPile":
-                description.text = "One of the batteries to my remote is in that pile of dust! I would grab it, but if my wife sees me covered in filth again, she is getting the spoon back out. I need something to cover my hands with before grabbing it.";
+                description.text = "One of the batteries to my remote is in that pile of dust! I would grab it, but if my wife sees me covered in filth again, she is getting the spoon back out.";
                 reactionTime = 0;
                 reacting = true;
                 break;
 
+            case "emptyHole":
+                description.text = "Looking down here is making me afraid of heights.";
+                reactionTime = 0;
+                reacting = true;
+                break;
+
+            case "glovePickup":
+                description.text = "I managed to fish out these gloves with my giant toenail. They are still pretty sticky, but as long as it is on the outside, my wife will allow me to see the end of this day.";
+                reactionTime = 0;
+                reacting = true;
+                break;
+
+            case "gummedHole":
+                description.text = "I threw the gum down there. Now the gloves are sticky enough to attach to anything and give that thing caveties.";
+                reactionTime = 0;
+                reacting = true;
+                break;
+
+            case "hole":
+                reactionTime = 0;
+                reacting = true;
+                description.text = "There are a pair of gloves down there, but I already spent too many calories climbing out of one hole, I am NOT climbing out of another!";
+                break;
+
+            case "gumPickup":
+                reactionTime = 0;
+                reacting = true;
+                description.text = "I got the gum. Maybe I still can chew on a small piece...I think I just swallowed a bug. That is probably enough chewing for now.";
+                break;
+
+            case "toenailPickup":
+                reactionTime = 0;
+                reacting = true;
+                description.text = "Woah! It's that toenail I clipped last month! I think that was my biggest one ever! I'm keeping this as a souvenier!";
+                break;
         }
     }
 

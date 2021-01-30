@@ -860,7 +860,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 5
             m_FloatArgument: 0
-            m_StringArgument: gloves
+            m_StringArgument: glovesInv
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 1
@@ -1309,7 +1309,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 4
             m_FloatArgument: 0
-            m_StringArgument: remote
+            m_StringArgument: remoteInv
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 1
@@ -1489,7 +1489,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 6
             m_FloatArgument: 0
-            m_StringArgument: battery
+            m_StringArgument: batteryInv
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 1
@@ -2122,7 +2122,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 2
             m_FloatArgument: 0
-            m_StringArgument: toenail
+            m_StringArgument: toenailInv
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 1
@@ -2433,8 +2433,10 @@ GameObject:
   - component: {fileID: 770495119}
   - component: {fileID: 770495118}
   - component: {fileID: 770495117}
+  - component: {fileID: 770495120}
+  - component: {fileID: 770495121}
   m_Layer: 0
-  m_Name: GloveGum2 (1)
+  m_Name: Gum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2503,6 +2505,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &770495120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770495116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ba2735c45e4624ca4a71b32e4b8011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  narration: {fileID: 1953365532}
+--- !u!65 &770495121
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770495116}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02287288, y: 0.029348906, z: 0.023134004}
+  m_Center: {x: 0.0005827206, y: -0.0004041246, z: 0.000038874336}
 --- !u!1 &802152139
 GameObject:
   m_ObjectHideFlags: 0
@@ -2883,7 +2911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052377869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.16, y: 2, z: -43.88}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1757870536}
@@ -3753,7 +3781,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 1
             m_FloatArgument: 0
-            m_StringArgument: gum
+            m_StringArgument: gumInv
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 1
@@ -4012,7 +4040,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 3
             m_FloatArgument: 0
-            m_StringArgument: shoelace
+            m_StringArgument: shoelaceInv
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 1
@@ -5470,6 +5498,7 @@ GameObject:
   - component: {fileID: 1729929052}
   - component: {fileID: 1729929051}
   - component: {fileID: 1729929050}
+  - component: {fileID: 1729929053}
   m_Layer: 0
   m_Name: LedgeBarrier2
   m_TagString: Untagged
@@ -5512,6 +5541,21 @@ Transform:
   m_Father: {fileID: 1632610595900687592}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1729929053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729929049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95636cb42275e7a4a80ed38af77ac4a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gloves: {fileID: 726973085}
+  gum: {fileID: 1866821053}
+  narration: {fileID: 1953365532}
 --- !u!1 &1757870535
 GameObject:
   m_ObjectHideFlags: 0
@@ -5825,7 +5869,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1866821054
 Transform:
   m_ObjectHideFlags: 0
@@ -6003,7 +6047,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 6
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: batteryInv
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 1
@@ -6240,7 +6284,7 @@ MonoBehaviour:
   battery2: {fileID: 1168939501}
   battery3: {fileID: 77288164}
   inventory: {fileID: 1628357458}
-  narration: {fileID: 0}
+  narration: {fileID: 1953365532}
 --- !u!114 &1953365532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6688,7 +6732,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 6
+            m_StringArgument: batteryInv
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 1
@@ -7047,6 +7091,8 @@ GameObject:
   - component: {fileID: 7176305692702999360}
   - component: {fileID: 1903348712301688286}
   - component: {fileID: 8028792760539293953}
+  - component: {fileID: 6620327057680190891}
+  - component: {fileID: 6620327057680190892}
   m_Layer: 0
   m_Name: Toe Nail
   m_TagString: Untagged
@@ -7054,6 +7100,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6620327057680190891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620327057680190890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68a6e405492bfa74cb4d59b4a58c23c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  narration: {fileID: 1953365532}
+--- !u!65 &6620327057680190892
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620327057680190890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0071147536, y: 0.019267904, z: 0.018302368}
+  m_Center: {x: 0.011441987, y: -0.00018908353, z: 0.001733939}
 --- !u!4 &7176305692702999360
 Transform:
   m_ObjectHideFlags: 0

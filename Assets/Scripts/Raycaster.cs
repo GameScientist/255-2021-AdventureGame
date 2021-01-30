@@ -39,6 +39,24 @@ public class Raycaster : MonoBehaviour
                 {
                     battery.PlayerInteract();
                 }
+
+                Hole hole = hit.transform.GetComponentInParent<Hole>();
+                if (hole != null)
+                {
+                    hole.PlayerInteract();
+                }
+
+                Gum gum = hit.transform.GetComponentInParent<Gum>();
+                if (gum != null)
+                {
+                    gum.PlayerInteract();
+                }
+
+                Toenail toenail = hit.transform.GetComponentInParent<Toenail>();
+                if (toenail != null)
+                {
+                    toenail.PlayerInteract();
+                }
             }
 
         }

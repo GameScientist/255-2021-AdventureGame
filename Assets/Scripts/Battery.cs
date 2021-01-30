@@ -13,7 +13,7 @@ public class Battery : MonoBehaviour
     {
         if (hasBattery)
         {
-            if (ItemSwitching.main.equipped == 4)
+            if (ItemSwitching.main.equipped == 5)
             {
                 // remember that the player has "picked up" the object
                 Inventory.main.batteries += 1;
