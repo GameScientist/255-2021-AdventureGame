@@ -19,7 +19,7 @@ public class ItemSwitching : MonoBehaviour
         switch (itemId)
         {
             case 0:
-                item.text = "Observe";
+                item.text = "None";
                 break;
             case 1:
                 item.text = "Gum";
