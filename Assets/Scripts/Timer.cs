@@ -14,6 +14,7 @@ public class Timer : MonoBehaviour
     public Battery battery2;
     public Battery battery3;
     public Inventory inventory;
+    public Narration narration;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,7 @@ public class Timer : MonoBehaviour
                 battery2.Respawn();
                 battery3.Respawn();
                 inventory.batteries = 0;
+                narration.DisplayText("timerFailure");
             }
         }
     }

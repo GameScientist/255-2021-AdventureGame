@@ -179,7 +179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eb7b381dcbbdf4439f7a91a6e6699a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battery: {fileID: 3248927750697275784}
+  battery: {fileID: 1540792854651740002}
+  timer: {fileID: 0}
+  narration: {fileID: 0}
 --- !u!65 &7039960816086398563
 BoxCollider:
   m_ObjectHideFlags: 0
