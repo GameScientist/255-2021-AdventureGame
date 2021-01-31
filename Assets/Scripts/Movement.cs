@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     public float gravity = -10f;
     public Transform teleport;
     public bool teleporting;
+    private float timer = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,13 @@ public class Movement : MonoBehaviour
         if (teleporting)
         {
             transform.position = teleport.position;
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                teleporting = false;
+                timer = 1;
+            }
+
         }
     }
 }

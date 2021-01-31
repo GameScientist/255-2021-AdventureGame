@@ -8,6 +8,7 @@ public class Raycaster : MonoBehaviour
     private Camera cam;
     public Transform player;
     public Transform telport;
+    public Narration narration;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +23,16 @@ public class Raycaster : MonoBehaviour
 
         if (cam != null && Input.GetButtonDown("Fire1"))
         { // Did the user click on this game tick?
-            if (ItemSwitching.main.equipped == 4 && Inventory.main.batteries == 3)
+            if (ItemSwitching.main.equipped == 4)
             {
-                SceneManager.LoadScene("Credits");
+                if (Inventory.main.batteries == 3)
+                {
+                    SceneManager.LoadScene("Credits");
+                }
+                else
+                {
+                    narration.DisplayText("remoteUse");
+                }
             }
 
             Ray ray = new Ray(cam.transform.position, cam.transform.forward);

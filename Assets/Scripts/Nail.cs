@@ -8,6 +8,7 @@ public class Nail : MonoBehaviour
     private bool outOfHole = false;
     public Transform player;
     public Movement movement;
+    public static ItemSwitching _main;
 
     public void PlayerInteract()
     {

@@ -41,29 +41,42 @@ public class Narration : MonoBehaviour
             // Inventory Items
             case "none":
                 description.text = "Walk around with my hands empty. Not good for anything other than punching the enemies that this game does not have.";
+                reacting = false;
                 break;
             case "gumInv":
                 description.text = "A piece of gum I chewed on for a few years until my wife said I should be smoking cigarettes instead. It is REALLY sticky.";
+                reacting = false;
                 break;
             case "toenailInv":
                 description.text = "I had to clip this sucker after I saw that my big toe was starting to grow its own eco system. I forgot how long it was...";
+                reacting = false;
                 break;
             case "shoestringInv":
                 description.text = " It's long enough to use as a makeshift rope.";
+                reacting = false;
                 break;
             case "remoteInv":
                 description.text = "Ol' reliable...as long as it has a working set of batteries. Once it is working, I can turn on the TV and get out of here!";
+                reacting = false;
                 break;
             case "glovesInv":
                 description.text = "My wife insists that I use these when doing dirty work, or else she'll get the spoon out again.";
+                reacting = false;
                 break;
             case "batteryInv":
                 description.text = "These only have enough juice in them to last for a few more seconds, so I will need to pick'em all up and turn on the TV fast.";
+                reacting = false;
                 break;
 
             // Observations
 
             // Reactions
+            case "remoteUse:":
+                description.text = "I'm going to need three batteries before I can use this thing.";
+                reactionTime = 0;
+                reacting = true;
+                break;
+
             case "batteryPickUp1":
                 description.text = "These batteries have a short charge on them, so I will have to grab the other two batteries quickly! This is the most I have moved since gym class.";
                 reactionTime = 0;
@@ -128,6 +141,12 @@ public class Narration : MonoBehaviour
                 reactionTime = 0;
                 reacting = true;
                 description.text = "Woah! It's that toenail I clipped last month! I think that was my biggest one ever! I'm keeping this as a souvenier!";
+                break;
+
+            case "remotePickup":
+                reactionTime = 0;
+                reacting = true;
+                description.text = "Alright! It's my remote...aaand it's out of batteries. Wonderful.";
                 break;
 
             case "outOfHole":
