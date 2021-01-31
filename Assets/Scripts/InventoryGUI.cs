@@ -30,5 +30,9 @@ public class InventoryGUI : MonoBehaviour
         batttery1.gameObject.SetActive(Inventory.main.hasBattery1);
         batttery2.gameObject.SetActive(Inventory.main.hasBattery2);
         batttery3.gameObject.SetActive(Inventory.main.hasBattery3);
+
+        
     }
+
+    
 }

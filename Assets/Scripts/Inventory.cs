@@ -21,7 +21,7 @@ public class Inventory : MonoBehaviour
     public bool hasBattery3 = false;
     public int batteries = 0;
 
-    private bool inventoryOpened = false;
+    public bool inventoryOpened = false;
 
     public Transform panel;
 
