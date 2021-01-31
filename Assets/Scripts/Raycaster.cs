@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Raycaster : MonoBehaviour
 {
     private Camera cam;
+    public Transform player;
+    public Transform telport;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +58,18 @@ public class Raycaster : MonoBehaviour
                 if (toenail != null)
                 {
                     toenail.PlayerInteract();
+                }
+
+                Nail nail = hit.transform.GetComponentInParent<Nail>();
+                if (nail != null)
+                {
+                    nail.PlayerInteract();
+                }
+
+                Shoelace shoelace = hit.transform.GetComponentInParent<Shoelace>();
+                if (shoelace != null)
+                {
+                    shoelace.PlayerInteract();
                 }
             }
 

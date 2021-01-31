@@ -7,7 +7,6 @@ public class Hole : MonoBehaviour
     public GameObject gloves;
     public GameObject gum;
     public Narration narration;
-    private bool gummed;
     private int state = 0;
 
     // Start is called before the first frame update
@@ -34,7 +33,7 @@ public class Hole : MonoBehaviour
                 if (ItemSwitching.main.equipped == 2)
                 {
                     Inventory.main.hasRubberGloves = true;
-                    ItemSwitching.main.equipped = 5;
+                    ItemSwitching.main.equipped = 0;
                     Inventory.main.hasToenail = false;
                     Destroy(gloves);
                     Destroy(gum);

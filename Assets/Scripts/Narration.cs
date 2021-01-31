@@ -14,7 +14,7 @@ public class Narration : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        DisplayText("into");
     }
 
     // Update is called once per frame
@@ -49,7 +49,7 @@ public class Narration : MonoBehaviour
                 description.text = "I had to clip this sucker after I saw that my big toe was starting to grow its own eco system. I forgot how long it was...";
                 break;
             case "shoestringInv":
-                description.text = "I KNEW that cat made off with this! It's long enough to use as a makeshift rope.";
+                description.text = " It's long enough to use as a makeshift rope.";
                 break;
             case "remoteInv":
                 description.text = "Ol' reliable...as long as it has a working set of batteries. Once it is working, I can turn on the TV and get out of here!";
@@ -128,6 +128,36 @@ public class Narration : MonoBehaviour
                 reactionTime = 0;
                 reacting = true;
                 description.text = "Woah! It's that toenail I clipped last month! I think that was my biggest one ever! I'm keeping this as a souvenier!";
+                break;
+
+            case "outOfHole":
+                reactionTime = 0;
+                reacting = true;
+                description.text = "I'm not going back down there and climbing back up here again! Besides, I don't see anything useful in there, anyways.";
+                break;
+
+            case "climb":
+                reactionTime = 0;
+                reacting = true;
+                description.text = "*Pant,* *pant,* *pant,* if somebody shot me in the butt just now, I think that would have given me less pain than that climb, but at least I am out.";
+                break;
+
+            case "nail":
+                reactionTime = 0;
+                reacting = true;
+                description.text = "That nail looks pretty firmly stuck in the ground up there. No wonder the couch has felt so rough to sit on lately.";
+                break;
+
+            case "shoelacePickup":
+                reactionTime = 0;
+                reacting = true;
+                description.text = "I picked up the shoelace. I KNEW that cat made off with it!";
+                break;
+
+            case "intro":
+                reactionTime = 0;
+                reacting = true;
+                description.text = "Press the left mouse button to interact with objects and equip items in my inventory and the right mouse button to open up my inventory. Capache? Alright, let's find my remote.";
                 break;
         }
     }

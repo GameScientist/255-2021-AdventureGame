@@ -8,6 +8,8 @@ public class Movement : MonoBehaviour
     public float speed = 20f;
     Vector3 velocity;
     public float gravity = -10f;
+    public Transform teleport;
+    public bool teleporting;
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +28,10 @@ public class Movement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+        if (teleporting)
+        {
+            transform.position = teleport.position;
+        }
     }
 }

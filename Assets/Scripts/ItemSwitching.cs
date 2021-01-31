@@ -47,37 +47,37 @@ public class ItemSwitching : MonoBehaviour
         {
             case 0:
                 item.text = "None";
-                rawImage = GetComponent<RawImage>();
-                rawImage.texture = gum;
+                rawImage = image.GetComponent<RawImage>();
+                rawImage.texture = none;
                 break;
             case 1:
                 item.text = "Gum";
-                rawImage = GetComponent<RawImage>();
+                rawImage = image.GetComponent<RawImage>();
                 rawImage.texture = gum;
                 break;
             case 2:
                 item.text = "Toenail";
-                rawImage = GetComponent<RawImage>();
+                rawImage = image.GetComponent<RawImage>();
                 rawImage.texture = toenail;
                 break;
             case 3:
                 item.text = "Shoelace";
-                rawImage = GetComponent<RawImage>();
+                rawImage = image.GetComponent<RawImage>();
                 rawImage.texture = shoelace;
                 break;
             case 4:
                 item.text = "Remote";
-                rawImage = GetComponent<RawImage>();
+                rawImage = image.GetComponent<RawImage>();
                 rawImage.texture = remote;
                 break;
             case 5:
                 item.text = "Gloves";
-                rawImage = GetComponent<RawImage>();
+                rawImage = image.GetComponent<RawImage>();
                 rawImage.texture = gloves;
                 break;
             case 6:
                 item.text = "Battery";
-                rawImage = GetComponent<RawImage>();
+                rawImage = image.GetComponent<RawImage>();
                 rawImage.texture = battery;
                 break;
         }
