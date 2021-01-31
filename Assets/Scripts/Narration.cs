@@ -14,7 +14,7 @@ public class Narration : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DisplayText("into");
+        DisplayText("intro");
     }
 
     // Update is called once per frame
@@ -157,7 +157,7 @@ public class Narration : MonoBehaviour
             case "intro":
                 reactionTime = 0;
                 reacting = true;
-                description.text = "Press the left mouse button to interact with objects and equip items in my inventory and the right mouse button to open up my inventory. Capache? Alright, let's find my remote.";
+                description.text = "Press the left mouse button to interact with objects and equip items in my inventory and the right mouse button to open up my inventory. Capache? Alright, let's find my remote so I can get back to my programs.";
                 break;
         }
     }

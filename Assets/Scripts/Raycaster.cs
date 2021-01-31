@@ -35,6 +35,11 @@ public class Raycaster : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit)) // raycast hit a collider in the scene!
             {
+                Remote remote = hit.transform.GetComponentInParent<Remote>();
+                if (remote != null)
+                {
+                    remote.PlayerInteract();
+                }
 
                 Battery battery = hit.transform.GetComponentInParent<Battery>();
                 if (battery != null)
