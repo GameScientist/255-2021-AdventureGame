@@ -12,6 +12,7 @@ public class Credits : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         { // Did the user click on this game tick?
             Application.Quit();
+            print("Quit");
         }
     }
 }
