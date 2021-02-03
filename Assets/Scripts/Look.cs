@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Camera controls.
+/// </summary>
 public class Look : MonoBehaviour
 {
     public float mouseSensitivity;
@@ -13,7 +15,7 @@ public class Look : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked; // When the player starts, their mouse is locked to the center of the screen.
     }
 
     // Update is called once per frame

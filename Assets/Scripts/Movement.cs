@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Movement controls.
+/// </summary>
 public class Movement : MonoBehaviour
 {
     public CharacterController controller;
@@ -30,11 +32,11 @@ public class Movement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-        if (teleporting)
+        if (teleporting) // If the player used the shoelace on the nail, they are transported out of the hole.
         {
             transform.position = teleport.position;
             timer -= Time.deltaTime;
-            if (timer <= 0)
+            if (timer <= 0) // This is mean to prevent a glitch that caused the player to warp back to their previous position.
             {
                 teleporting = false;
                 timer = 1;

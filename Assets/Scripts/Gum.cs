@@ -13,6 +13,7 @@ public class Gum : MonoBehaviour
         // destroy this game object:
         Destroy(gameObject);
 
+        // The narration describes what was just picked up.
         narration.DisplayText("gumPickup");
     }
 }

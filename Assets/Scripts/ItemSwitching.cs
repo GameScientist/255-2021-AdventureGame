@@ -37,10 +37,10 @@ public class ItemSwitching : MonoBehaviour
         {
             Destroy(gameObject); // destroy this extra inventory system...
         }
-        EquipItem(0);
+        EquipItem(0); // The game starts with nothing equipped.
     }
 
-    public void EquipItem(int itemId)
+    public void EquipItem(int itemId) // A different item is equipped based on the string attached to the event triggers of each button.
     {
         equipped = itemId;
         switch (itemId)

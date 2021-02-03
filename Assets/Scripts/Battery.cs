@@ -4,24 +4,23 @@ using UnityEngine;
 
 public class Battery : MonoBehaviour
 {
-    public Transform battery;
-    public Timer timer;
     private bool hasBattery = true;
     public Narration narration;
+    public Transform battery;
+    public Timer timer;
 
-    public void PlayerInteract()
+    public void PlayerInteract() //Stores a battery in the inventory and starts a timer for how long the batteries will last.
     {
         if (hasBattery)
         {
-            if (ItemSwitching.main.equipped == 5)
+            if (ItemSwitching.main.equipped == 5) // Batteries can only be retrieved from dust piles with the rubber gloves.
             {
-                // remember that the player has "picked up" the object
                 Inventory.main.batteries += 1;
                 timer.TimeTrial();
                 // destroy this game object:
                 battery.gameObject.SetActive(false);
                 hasBattery = false;
-                switch (Inventory.main.batteries)
+                switch (Inventory.main.batteries) // The narration differs depending on how many batteries were retrieved.
                 {
                     case 1:
                         narration.DisplayText("batteryPickUp1");
@@ -34,20 +33,14 @@ public class Battery : MonoBehaviour
                         break;
                 }
             }
-
             else
             {
-                narration.DisplayText("dustPile");
+                narration.DisplayText("dustPile"); // Occurs if the player tries to pick up a battery without any rubber gloves.
             }
-        }
-
-        else
-        {
-
         }
     }
 
-    public void Respawn()
+    public void Respawn() // The batteries will respawn if the player runs out of time.
     {
         battery.gameObject.SetActive(true);
         hasBattery = true;

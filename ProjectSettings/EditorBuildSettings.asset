@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: 8a7eda2bd709eeb4daffaf7f4cc41652
   - enabled: 1
-    path: Assets/Couch.unity
+    path: Assets/Scenes/Couch.unity
     guid: 567d0deb00075c54f9c481a34ca6ec28
   - enabled: 1
     path: Assets/Scenes/Credits.unity

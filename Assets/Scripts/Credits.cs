@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Credits : MonoBehaviour
 {
-    // Start is called before the first frame update
+    /// <summary>
+    /// The game closes when the player clicks.
+    /// </summary>
 
     // Update is called once per frame
     void Update()

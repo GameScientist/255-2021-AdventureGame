@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Inventory icons are displayed based on if they have been stored in the player's inventory.
+/// </summary>
 public class InventoryGUI : MonoBehaviour
 {
     public Transform gum;
@@ -30,8 +32,6 @@ public class InventoryGUI : MonoBehaviour
         batttery1.gameObject.SetActive(Inventory.main.hasBattery1);
         batttery2.gameObject.SetActive(Inventory.main.hasBattery2);
         batttery3.gameObject.SetActive(Inventory.main.hasBattery3);
-
-        
     }
 
     

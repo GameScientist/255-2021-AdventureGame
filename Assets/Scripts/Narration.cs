@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// For each player interaction, narration is given inside of a text box.
+/// </summary>
 public class Narration : MonoBehaviour
 {
     public Transform box;
@@ -14,13 +16,13 @@ public class Narration : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DisplayText("intro");
+        DisplayText("intro"); // The game starts with the narrator explaining the controls.
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (reacting)
+        if (reacting) // Narration is given based on
         {
             reactionTime += Time.deltaTime;
             if (reactionTime >= 15)

@@ -12,14 +12,14 @@ public class Nail : MonoBehaviour
 
     public void PlayerInteract()
     {
-        if (outOfHole)
+        if (outOfHole) // Once the player solves the first puzzle, there is no need for the player to go back into the hole.
         {
             narration.DisplayText("outOfHole");
         }
 
         else
         {
-            if (ItemSwitching.main.equipped == 3)
+            if (ItemSwitching.main.equipped == 3) // The player can climb out of the hole by using the shoelace on the nail.
             {
                 movement.teleporting = true;
                 outOfHole = true;
@@ -30,7 +30,7 @@ public class Nail : MonoBehaviour
 
             else
             {
-                narration.DisplayText("nail");
+                narration.DisplayText("nail"); // The narration gives an observation on the nail.
             }
         }
     }

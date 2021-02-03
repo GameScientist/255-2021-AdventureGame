@@ -11,11 +11,14 @@ public class Inventory : MonoBehaviour
         get { return _main; }
     }
 
+    /// All of the items the player can collect.
     public bool hasGum = false;
     public bool hasToenail = false;
     public bool hasShoelace = false;
     public bool hasRemote = false;
     public bool hasRubberGloves = false;
+
+    // The amount of icons appearing the inventory is determined by how many batteries the player has collected.
     public bool hasBattery1 = false;
     public bool hasBattery2 = false;
     public bool hasBattery3 = false;
@@ -43,6 +46,7 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // The amount of icons appearing the inventory is determined by how many batteries the player has collected.
         if (batteries == 3)
         {
             hasBattery3 = true;
@@ -58,6 +62,7 @@ public class Inventory : MonoBehaviour
             hasBattery1 = true;
         }
 
+        // The right mouse button opens and closes the inventory.
         if (Input.GetButtonDown("Fire2"))
         {
             if (!inventoryOpened)
