@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Toenail : MonoBehaviour
 {
-    public Narration narration;
+    /// <summary>
+    /// The toenail object the player can collect and store in the inventory.
+    /// </summary>
+    public Narration narration; // Plays when the player picks up the object.
     public void PlayerInteract()
     {
         // remember that the player has "picked up" the object
@@ -14,5 +17,7 @@ public class Toenail : MonoBehaviour
         Destroy(gameObject);
 
         narration.DisplayText("toenailPickup");
+
+        FindObjectOfType<AudioManager>().Play("Scrape");
     }
 }

@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// The remote item that can be picked up and stored in the player's inventory.
+/// </summary>
 public class Remote : MonoBehaviour
 {
-    Narration narration;
+    public Narration narration;
     // Start is called before the first frame update
     public void PlayerInteract()
     {
@@ -15,5 +18,7 @@ public class Remote : MonoBehaviour
         Destroy(gameObject);
 
         narration.DisplayText("remotePickup");
+
+        FindObjectOfType<AudioManager>().Play("Choir");
     }
 }

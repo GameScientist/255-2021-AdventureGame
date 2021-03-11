@@ -7,22 +7,22 @@ using UnityEngine.UI;
 /// </summary>
 public class Narration : MonoBehaviour
 {
-    public Transform box;
-    public Transform text;
-    private Text description;
-    private bool reacting;
-    private float reactionTime;
+    public Transform box; // The panel that appears behind the narration text.
+    public Transform text; // The text box.
+    private Text description; // The text that appears inside the text box.
+    private bool reacting; // Keeps the narration box appearing if it is true.
+    private float reactionTime; // Tracks how long reacting has been true.
 
     // Start is called before the first frame update
     void Start()
     {
-        DisplayText("intro"); // The game starts with the narrator explaining the controls.
+        DisplayText("intro"); // The game starts with the narrator screaming like a little baby.
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() // Keeps reactions appear for a period of time after they have been called.
     {
-        if (reacting) // Narration is given based on
+        if (reacting)
         {
             reactionTime += Time.deltaTime;
             if (reactionTime >= 15)
@@ -33,14 +33,13 @@ public class Narration : MonoBehaviour
         }
     }
 
-    public void DisplayText(string subject)
+    public void DisplayText(string subject) // Enables the narration box so that text can be shown based on the subject given by other scripts.
     {
-        print("DisplayText");
         box.gameObject.SetActive(true);
         description = text.GetComponent<Text>();
         switch (subject)
         {
-            // Inventory Items
+            // Narration for inventory items appear as long as the player hovers their mouse over them.
             case "none":
                 description.text = "Walk around with my hands empty. Not good for anything other than punching the enemies that this game does not have.";
                 reacting = false;
@@ -70,9 +69,7 @@ public class Narration : MonoBehaviour
                 reacting = false;
                 break;
 
-            // Observations
-
-            // Reactions
+            // Reactions will appear and then disappear after some time.
             case "remoteUse:":
                 description.text = "I'm going to need three batteries before I can use this thing.";
                 reactionTime = 0;
@@ -175,15 +172,27 @@ public class Narration : MonoBehaviour
                 description.text = "I picked up the shoelace. I KNEW that cat made off with it!";
                 break;
 
+            case "tutorial":
+                reactionTime = 0;
+                reacting = true;
+                description.text = "Ow! I landed on my butt! It's pretty sore, but no amount of pain can prevent me from reaching my remote. But first I will need to find a way out of this hole...";
+                break;
+
             case "intro":
                 reactionTime = 0;
                 reacting = true;
-                description.text = "Press the left mouse button to interact with objects and equip items in my inventory and the right mouse button to open up my inventory. Capache? Alright, let's find my remote so I can get back to my programs.";
+                description.text = "WAAAHHH!!!";
+                break;
+
+            case "null":
+                reactionTime = 0;
+                reacting = true;
+                description.text = "Nothing to see here.";
                 break;
         }
     }
 
-    public void RemoveText()
+    public void RemoveText() // Removes the narration box.
     {
         box.gameObject.SetActive(false);
     }

@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// The "gum" item that can be collected upon player interaction.
+/// </summary>
 public class Gum : MonoBehaviour
 {
     public Narration narration;
@@ -15,5 +18,7 @@ public class Gum : MonoBehaviour
 
         // The narration describes what was just picked up.
         narration.DisplayText("gumPickup");
+
+        FindObjectOfType<AudioManager>().Play("Peel");
     }
 }

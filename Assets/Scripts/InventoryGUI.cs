@@ -6,6 +6,7 @@ using UnityEngine;
 /// </summary>
 public class InventoryGUI : MonoBehaviour
 {
+    // The inventory icons.
     public Transform gum;
     public Transform toenail;
     public Transform shoelace;
@@ -15,14 +16,8 @@ public class InventoryGUI : MonoBehaviour
     public Transform batttery2;
     public Transform batttery3;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
-    void Update()
+    void Update() // The icons will appear if the player has them in their inventory.
     {
         gum.gameObject.SetActive(Inventory.main.hasGum);
         toenail.gameObject.SetActive(Inventory.main.hasToenail);

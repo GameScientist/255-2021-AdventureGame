@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public static Inventory _main;
+    private static Inventory _main;
 
     public static Inventory main
     {
@@ -24,9 +24,9 @@ public class Inventory : MonoBehaviour
     public bool hasBattery3 = false;
     public int batteries = 0;
 
-    public bool inventoryOpened = false;
+    public bool inventoryOpened = false; // Affects whether the inventory should be opened or closed when the player clicks the right mouse button.
 
-    public Transform panel;
+    public Transform panel; // The panel that shows all of the items the player has.
 
     // Start is called before the first frame update
     private void Start()

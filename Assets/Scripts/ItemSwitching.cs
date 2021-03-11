@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Used to switch the player's currently equipped item while also changing its icon to communicate to the player the currently equipped item.
+/// </summary>
 public class ItemSwitching : MonoBehaviour
 {
-    public static ItemSwitching _main;
-    public Transform image;
+    public static ItemSwitching _main; // Used to prevent objects from being destroyed between scenes.
+    public Transform image; // The object that holds the image used to represent specific items.
 
     // images
-    RawImage rawImage;
+    RawImage rawImage; // The compoent of the image used to display different files.
     public Texture none;
     public Texture gum;
     public Texture toenail;
@@ -23,10 +26,10 @@ public class ItemSwitching : MonoBehaviour
         get { return _main; }
     }
 
-    public Text item;
-    public int equipped;
+    public Text item; // The name of the item shown under the item icon.
+    public int equipped; // The ID used to represent the item the player currently has equipped.
 
-    private void Start()
+    private void Start() // When starting, it is decided what objects will be destroyed and what will be kept.
     {
         if (_main == null)
         {

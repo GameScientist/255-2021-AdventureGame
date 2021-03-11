@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Batteries can be collected here, but they all must be collected in quick succession, or else they will reset.
+/// </summary>
 public class Battery : MonoBehaviour
 {
-    private bool hasBattery = true;
-    public Narration narration;
-    public Transform battery;
-    public Timer timer;
+    private bool hasBattery = true; // Tracks whether a battery can be picked up from the pile.
+    public Narration narration; // Allows the narration to be changed upon interaction.
+    public Transform battery; // The battery object that appears as part of the dust pile.
+    public Timer timer; // Tracks how much time is left until the batteries reset.
 
     public void PlayerInteract() //Stores a battery in the inventory and starts a timer for how long the batteries will last.
     {
@@ -32,10 +35,12 @@ public class Battery : MonoBehaviour
                         narration.DisplayText("batteryPickUp3");
                         break;
                 }
+                FindObjectOfType<AudioManager>().Play("Rustling");
             }
             else
             {
                 narration.DisplayText("dustPile"); // Occurs if the player tries to pick up a battery without any rubber gloves.
+                FindObjectOfType<AudioManager>().Play("Hmmm");
             }
         }
     }
